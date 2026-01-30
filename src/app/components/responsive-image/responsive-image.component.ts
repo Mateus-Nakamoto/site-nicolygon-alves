@@ -20,9 +20,7 @@ export class ResponsiveImageComponent implements OnInit {
 		1024
 	];
 	imageFormats = [
-		"avif",
-		"webp",
-		"jpg"
+		"png"
 	];
 
 	constructor() { }

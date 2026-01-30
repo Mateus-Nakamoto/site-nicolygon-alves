@@ -45,6 +45,8 @@ docs/CNAME
 
 *.avif
 *.webp
+*.png
 
 /src/assets/img/*.jpeg
 /src/assets/img/*.jpg
+/src/assets/img/*.png
