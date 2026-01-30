@@ -34,10 +34,10 @@ export class ThemeSwitcherComponent implements OnInit {
 	}
 
 	toggleThemeMode() {
-		if (this.themeMode === "dark") {
-			this.setThemeMode("light");
-		} else {
+		if (this.themeMode === "light") {
 			this.setThemeMode("dark");
+		} else {
+			this.setThemeMode("light");
 		}
 	}
 
