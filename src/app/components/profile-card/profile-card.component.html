@@ -1,0 +1,28 @@
+<article class="profile-card">
+	<header class="profile-card__header">
+		<div class="profile-card__cover-container">
+		</div>
+		<div class="profile-card__photo-container">
+			<div class="profile-card__profile-photo">
+				<responsive-image
+					imageName="me-min"
+					class="profile-card__photo"
+					imageAlt="Profile picture"
+					[imageWidth]="120" [imageHeight]="120"
+					itemProp="image"
+					[imageBoundary]="256"
+				></responsive-image>
+			</div>
+		</div>
+	</header>
+	<section class="profile-card__text">
+		<h1 class="profile-card__name">{{ name }}</h1>
+		<span class="profile-card__tagline">{{ tagline }}</span>
+		<a href="https://wa.me/554196780876" class="profile-card__contact" target="_blank">
+			<span class="material-symbols-rounded profile-card__contact-icon">
+				public
+			</span>
+			Whatsapp
+		</a>
+	</section>
+</article>

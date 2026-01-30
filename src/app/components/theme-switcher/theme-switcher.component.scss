@@ -1,0 +1,20 @@
+@import "material-you";
+
+:host {
+	position: fixed;
+	top: 2rem;
+	right: 2rem;
+	z-index: 1;
+}
+
+.theme-switcher {
+	@include material-button--filled-secondary;
+	border-radius: 14px;
+    height: 3.5rem;
+	font-weight: 500;
+	box-shadow: $elevated-shadow;
+
+	&__toggle-icon {
+		margin-right: 0.5rem;
+	}
+}

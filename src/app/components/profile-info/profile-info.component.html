@@ -1,0 +1,17 @@
+<article class="profile-info" itemscope itemtype="http://schema.org/Person" id="profile-info">
+	<section class="profile-info__detail">
+		<header class="profile-info__header">
+			<span class="material-symbols-rounded">face</span>
+			<h1 class="profile-info__header-text" itemprop="name">{{this.text}}</h1>
+		</header>
+		<p class="profile-info__description" itemprop="description">{{ this.text2 }}</p>
+
+		<div class="profile-info__links">
+			<ng-container *ngTemplateOutlet="links"></ng-container>
+		</div>
+	</section>
+</article>
+
+<ng-template #links>
+
+</ng-template>

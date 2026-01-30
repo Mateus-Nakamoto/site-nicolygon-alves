@@ -1,0 +1,24 @@
+@import "material-you";
+
+:host {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+}
+
+.responsive-image {
+	display: flex;
+	flex-grow: 1;
+	justify-content: center;
+
+	&__fallback-img,
+	&__responsive-img {
+		height: 100%;
+		object-fit: cover;
+		object-position: center;
+	}
+
+	&__fallback-img {
+		width: 100%;
+	}
+}

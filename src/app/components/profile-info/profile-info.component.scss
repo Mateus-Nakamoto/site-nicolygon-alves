@@ -1,0 +1,124 @@
+@import "material-you";
+
+:host {
+	flex-grow: 1;
+	display: flex;
+	align-items: stretch;
+}
+
+.profile-info {
+	@include material-container--secondary;
+
+	display: flex;
+	padding: $container-padding;
+	border-radius: $container-border-radius;
+	flex-grow: 1;
+	flex-direction: column;
+	
+
+	&__header {
+		display: flex;
+		align-items: center;
+		font-size: 1.3rem;
+		font-weight: 600;
+		margin-bottom: 0rem;
+		margin-top: 2.3rem;
+		margin-right: 1.5rem;
+		
+		
+
+		& > .material-symbols-rounded {
+			margin-right: 0.5rem;
+			font-size: inherit;
+			margin-left: 1rem;
+		}
+	}
+
+	&__header-text {
+		font-size: 1.5rem;
+		font-weight: 600;
+		margin-bottom: 0rem;
+		
+	}
+
+	&__detail {
+		&:first-of-type {
+			margin-bottom: -0.5rem;
+			margin-left: 2rem;
+		}
+	}
+
+	&__links {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-template-rows: repeat(2, minmax(0, 1fr));
+		grid-auto-flow: column;
+		grid-gap: 2rem 2rem;
+
+		@include media-breakpoint-down(lg) {
+			grid-auto-flow: initial;		
+			grid-template-columns: repeat(1, minmax(0, 1fr));
+			grid-template-rows: repeat(2, minmax(0, 1fr));
+		}
+	}
+
+	&__link-wrapper {
+		display: flex;
+		justify-content: left;
+		align-items: center;
+		overflow: hidden;
+
+		& > .material-symbols-rounded {
+			margin-right: 0.5rem;
+		}
+	}
+
+	&__description {
+		margin: 1rem;
+	}
+
+	&__link {
+		@include material-button--filled-secondary;
+	}
+
+	&__link-text {
+		flex-grow: 1;
+		text-align: center;
+	}
+
+	&__contact-icon {
+		font-size: 1rem;
+	}
+
+	#formulario {
+		width: 100%; 
+		margin-left: 10%;
+		padding: 1rem;
+		height: auto;
+	  }
+	  
+	  .campo {
+		width: 50%;
+		float: center;
+		margin-left: 90px 50%;
+	  }
+	  
+	  .campo input {
+		margin: 10px 1%;
+		padding: 8px 1%;
+		margin-left: 108px 50%;
+		width: 90%;
+	  }
+	  
+
+		.clearAll {
+	    @include material-button--filled-secondary;
+		margin-top: 20px;
+		padding: 8px 1%;
+		width: 50%;
+		float: center;
+	}
+
+
+
+	}

@@ -1,0 +1,13 @@
+<button (click)="toggleLangMode()" class="lang-switcher">
+	ENG
+	<span class="material-symbols-outlined lang-swticher__toggle-icon">
+		<ng-container *ngIf="langMode === 'br'; else engMode">
+			toggle_on
+		</ng-container>
+		<ng-template #engMode>
+			toggle_off
+		</ng-template>
+	</span>
+	BR
+</button>
+

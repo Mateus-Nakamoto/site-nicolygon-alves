@@ -1,0 +1,41 @@
+<article class="hero-banner" id="hero-banner">
+	<section class="hero-banner__text-container">
+		<h1 class="hero-banner__header">Nicoly Gonçalves</h1>
+		<h2 class="hero-banner__subheader">{{this.text}}</h2>
+		<h2 class="hero-banner__subheader__cidade"><b>{{this.text2}}</b></h2>
+		<div class = "cover">
+		<img src="assets/img/mosaico.png" alt="Foto de capa" />
+		</div>
+	</section>
+	
+
+	<svg class="hero-banner__waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+		<defs>
+			<path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+		</defs>
+		<g class="hero-banner__wave-parallax">
+			<use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+			<use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+			<use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+			<use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+		</g>
+	</svg>
+</article>
+
+
+<ng-template #externalIconElement let-externalIcon="externalIcon">
+	<span
+		class="iconify hero-banner__stack-item"
+	>
+		<a class="hero-banner__external-icon-link" [href]="externalIcon.link" target="_blank" rel="me" [attr.title]="externalIcon.text">
+			<i
+				class="iconify hero-banner__external-icon"
+				[attr.data-icon]="externalIcon.icon"
+				width="2rem"
+				height="2rem"
+				data-width="2rem"
+				data-height="2rem"
+			></i>
+		</a>
+	</span>
+</ng-template>
